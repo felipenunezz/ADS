@@ -30,6 +30,10 @@ public:
 
     bool operator==(const TPair& pair) const noexcept;
 
+    void Swap(TPair& pair) noexcept;
+    constexpr void Swap(TPair& pair) noexcept;
+    constexpr void Swap(const TPair& pair) const noexcept;
+
     friend TPair& operator-(const TPair<T1, T2>& pair1, const TPair<T1, T2>& pair2) noexcept;
 
     std::string to_string() const noexcept;
